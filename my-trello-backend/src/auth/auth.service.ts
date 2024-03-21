@@ -83,7 +83,7 @@ export class AuthService {
             domain: 'onrender.com',
             expires: expiresIn,
             secure: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         })
     }
 
@@ -93,7 +93,7 @@ export class AuthService {
             domain: 'onrender.com',
             expires: new Date(0),
             secure: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         })
     }
 

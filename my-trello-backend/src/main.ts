@@ -8,7 +8,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.use(cookieParser());
   app.enableCors({
-    origin: 'https://mytrello-frontend-bz5t.onrender.com',
+    origin: ['https://mytrello-frontend-bz5t.onrender.com', 'http://localhost:3001'],
     credentials: true,
     exposedHeaders: 'set-cookie',
   });
