@@ -84,7 +84,7 @@ export class AuthService {
 
             expires: expiresIn,
             secure: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         })
     }
 
@@ -94,7 +94,7 @@ export class AuthService {
             // domain: 'mytrello-frontend-bz5t.onrender.com',
             expires: new Date(0),
             secure: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         })
     }
 
