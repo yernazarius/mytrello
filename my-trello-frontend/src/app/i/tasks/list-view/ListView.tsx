@@ -6,9 +6,8 @@ import { COLUMNS } from '../columns.data'
 import { useTaskDnd } from '../hooks/useTaskDnd'
 import { useTasks } from '../hooks/useTasks'
 
-
-import styles from './ListView.module.scss'
 import { ListRowParent } from './ListRowParent'
+import styles from './ListView.module.scss'
 
 export function ListView() {
 	const { items, setItems } = useTasks()
