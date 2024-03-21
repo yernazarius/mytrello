@@ -13,6 +13,7 @@ export const getAccessToken = () => {
 export const saveTokenStorage = (accessToken: string) => {
     Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
         sameSite: 'none',
+        domain: 'mytrello-frontend-bz5t.onrender.com',
         secure: true,
         expires: 1
     });
