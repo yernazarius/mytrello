@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
-import { TypePomodoroRoundState } from '@/types/pomodoro.types'
+import { TypePomodoroRoundFormState } from '@/types/pomodoro.types'
 
 import { pomodoroService } from '@/services/pomodoro.service'
 
@@ -9,7 +9,7 @@ export function useUpdateRound() {
 
 	const { mutate: updateRound, isPending: isUpdateRoundPending } = useMutation({
 		mutationKey: ['update round'],
-		mutationFn: ({ id, data }: { id: string; data: TypePomodoroRoundState }) =>
+		mutationFn: ({ id, data }: { id: string; data: TypePomodoroRoundFormState }) =>
 			pomodoroService.updateRound(id, data),
 		onSuccess() {
 			queryClient.invalidateQueries({ queryKey: ['get today session'] })

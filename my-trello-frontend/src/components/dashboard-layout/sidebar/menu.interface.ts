@@ -1,7 +1,7 @@
-import type { LucideIcon } from 'lucide-react'
+import { LucideIcon } from "lucide-react"
 
 export interface IMenuItem {
-	link: string
-	name: string
-	icon: LucideIcon
+    link: string
+    name: string
+    icon: LucideIcon
 }
