@@ -80,7 +80,7 @@ export class AuthService {
 
         res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
             httpOnly: false,
-            domain: 'mytrello-frontend-bz5t.onrender.com',
+            domain: 'mytrello-017a.onrender.com',
 
             expires: expiresIn,
             secure: true,
@@ -91,7 +91,7 @@ export class AuthService {
     removeRefreshTokenFromResponse(res: Response) {
         res.cookie(this.REFRESH_TOKEN_NAME, '', {
             httpOnly: false,
-            domain: 'mytrello-frontend-bz5t.onrender.com',
+            domain: 'mytrello-017a.onrender.com',
             expires: new Date(0),
             secure: true,
             sameSite: 'none'
