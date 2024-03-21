@@ -79,21 +79,21 @@ export class AuthService {
         expiresIn.setDate(expiresIn.getDate() + this.EXPIRE_DAY_REFRESH_TOKEN)
 
         res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
-            httpOnly: true,
+            httpOnly: false,
             domain: 'onrender.com',
             expires: expiresIn,
             secure: true,
-            sameSite: 'none'
+            sameSite: 'lax'
         })
     }
 
     removeRefreshTokenFromResponse(res: Response) {
         res.cookie(this.REFRESH_TOKEN_NAME, '', {
-            httpOnly: true,
+            httpOnly: false,
             domain: 'onrender.com',
             expires: new Date(0),
             secure: true,
-            sameSite: 'none'
+            sameSite: 'lax'
         })
     }
 
