@@ -8,7 +8,7 @@ import {
 import { authService } from '@/services/auth.service'
 
 const options: CreateAxiosDefaults = {
-    baseURL: 'https://mytrello-017a.onrender.com',
+    baseURL: 'https://mytrello-017a.onrender.com/api',
     headers: {
         'Content-Type': 'application/json'
     },
