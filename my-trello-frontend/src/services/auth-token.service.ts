@@ -14,7 +14,7 @@ export const saveTokenStorage = (accessToken: string) => {
     Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
         httpOnly: true,
         sameSite: 'lax',
-        domain: 'onrender.com',
+        // domain: 'onrender.com',
         secure: true,
         expires: 1
     });
